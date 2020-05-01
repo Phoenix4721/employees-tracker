@@ -200,12 +200,12 @@ async function createRolesTable() {
 
 
 
-function beginProgram() {
-    inquirer
-        .prompt([
+async function beginProgram() {
+    
+        await inquirer([
             {
                 type: 'list',
-                name: 'action',
+                name: 'choice',
                 message: 'Please Select an Action Towards Your Employee Database?',
                 choices: [
                     'View',
