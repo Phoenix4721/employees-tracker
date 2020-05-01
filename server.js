@@ -200,9 +200,9 @@ async function createRolesTable() {
 
 
 
-async function beginProgram() {
-    
-        await inquirer([
+function beginProgram() {
+    inquirer
+        .prompt([
             {
                 type: 'list',
                 name: 'choice',
