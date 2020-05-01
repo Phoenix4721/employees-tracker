@@ -90,7 +90,7 @@ async function createCompleteTable() {
         if (err) throw err;
 
 
- 
+
         function inputt(data) {
 
             for (employees in data) {
@@ -133,7 +133,7 @@ async function createDepartmentTable() {
 
 
         function inputt(data) {
- 
+
             for (department in data) {
                 if (data[department].depname != null) {
                     table.push(
@@ -167,7 +167,7 @@ async function createRolesTable() {
         if (err) throw err;
 
 
- 
+
         function inputt(data) {
 
             for (role in data) {
@@ -408,11 +408,11 @@ function beginProgram() {
                         .then(() => { createCompleteTable(); })
                     break;
 
-               
+
                 case "Delete":
                     break;
 
-                
+
                 case "Budget":
                     break;
             }
